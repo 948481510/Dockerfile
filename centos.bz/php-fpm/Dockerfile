@@ -61,7 +61,7 @@ WORKDIR ${SRC_DIR}
 # 开始编译安装php
 RUN apt-get update \
     && apt-get -y --no-install-recommends install ${BUILD_DEPS} ${BUILD_TOOLS} \
-    && wget http://php.net/distributions/php-${PHP_VERSION}.tar.gz \
+    && wget --no-check-certificate http://php.net/distributions/php-${PHP_VERSION}.tar.gz \
     && tar xf php-${PHP_VERSION}.tar.gz \
     && cd php-${PHP_VERSION} \
     && ln -s /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/libssl.so \
