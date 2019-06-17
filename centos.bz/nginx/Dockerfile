@@ -43,9 +43,9 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
  
 # 把构建上下文目录conf，即Dockerfile/centos.bz/nginx/conf目录下的文件复制到容器的/usr/local/nginx/conf目录。
-COPY conf/ /usr/local/nginx/conf/
+#COPY conf/ /usr/local/nginx/conf/
  
 # 定义启动容器时运行的命令
 ENTRYPOINT ["/usr/local/nginx/sbin/nginx"]
- 
+
 EXPOSE 80 443
