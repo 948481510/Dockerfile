@@ -1,4 +1,4 @@
-an:jessie镜像基础上安装nginx
+# 从debian:jessie镜像基础上安装nginx
 FROM debian:jessie
  
 # 声明此Dockerfile维护者的邮箱,有什么问题可以发到此邮件寻问
